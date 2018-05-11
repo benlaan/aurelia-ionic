@@ -1,0 +1,33 @@
+<template>
+
+    <require from="ionic-angular/css/ionic.css"></require>
+    <require from="ionic/ion-app"></require>
+    <require from="ionic/ion-spinner"></require>
+
+    <style>
+        input[readonly] {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .spinner-host {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.15;
+            z-index: 10000;
+        }
+    </style>
+
+    <ion-app>
+        <ion-view>
+            <div class="spinner-host" show.bind="loading">
+                <ion-spinner name="crescent"></ion-spinner>
+            </div>
+            <router-view></router-view>
+        </ion-view>
+    </ion-app>
+</template>

@@ -1,0 +1,14 @@
+<template>
+
+    <require from='./utilities/disabledAttribute'></require>
+    <require from='./ion-icon'></require>
+    <require from='./toolbar-button.css'></require>
+
+    <a class="tab-button ${title ? 'has-title' :''} ${icon ? 'has-icon' : ''}" disable.bind="disabled">
+        <slot>
+            <ion-icon if.bind="icon" name.bind="icon"></ion-icon>
+            <span class="tab-button-text" if.bind="title">${title}</span>
+        </slot>
+        <div class="button-effect"></div>
+    </a>
+</template>

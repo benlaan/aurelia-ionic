@@ -1,0 +1,17 @@
+ion-spinner {
+    position: static !important;
+}
+
+.spinner-md-crescent circle {
+    stroke: white !important;
+}
+
+ion-spinner svg {
+    left: 36%;
+    top: 35%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
