@@ -1,10 +1,10 @@
 {
   "name": "aurelia-ionic",
-  "description": "An Aurelia client application.",
+  "description": "Aurelia based component library leveraging the ionic framework's CSS",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/benlaan/aurelia-ionic"
   },
   "license": "MIT",
   "dependencies": {
