@@ -9,10 +9,10 @@
   "license": "MIT",
   "dependencies": {
     "ionic-angular": "https://registry.npmjs.org/ionic-angular/-/ionic-angular-3.9.2.tgz",
-    "text": "github:requirejs/text#latest"
+    "text": "github:requirejs/text#latest",
+    "tslib": "^1.9.1"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@types/node": "^9.4.7",
     "aurelia-bootstrapper": "^2.2.0",

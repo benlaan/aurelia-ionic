@@ -109,6 +109,11 @@
             "main": false,
             "resources": ["./css/ionic.css"]
           },
+          {
+            "name": "tslib",
+            "main": "tslib.js",
+            "path": "../node_modules/tslib"
+          },
           "text"
         ]
       }
