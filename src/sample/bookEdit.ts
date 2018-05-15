@@ -51,6 +51,7 @@ export class BookEdit extends BaseEdit {
             title: "",
             author: "",
             genre: "",
+            image: "",
             pages: 0,
             stars: 0
         };

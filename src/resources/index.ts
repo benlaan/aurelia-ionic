@@ -9,11 +9,14 @@ import { IonContent } from "./ion-content"
 import { IonFooter } from "./ion-footer"
 import { IonHeader } from "./ion-header"
 import { IonIcon } from "./ion-icon"
+import { IonImg } from "./ion-img"
 import { IonInput } from "./ion-input"
 import { IonItem } from "./ion-item"
 import { IonLabel } from "./ion-label"
 import { IonList } from "./ion-list"
 import { IonRow } from './ion-row';
+import { IonSegment } from './ion-segment';
+import { IonSegmentButton } from './ion-segment-button';
 import { IonSpinner } from "./ion-spinner"
 import { IonTitle } from "./ion-title"
 import { IonToolbar } from "./ion-toolbar"
@@ -42,11 +45,14 @@ export function configure(config: any) {
         "ionic/ion-footer",
         "ionic/ion-header",
         "ionic/ion-icon",
+        "ionic/ion-img",
         "ionic/ion-input",
         "ionic/ion-item",
         "ionic/ion-label",
         "ionic/ion-list",
         "ionic/ion-row",
+        "ionic/ion-segment",
+        "ionic/ion-segment-button",
         "ionic/ion-spinner",
         "ionic/ion-title",
         "ionic/ion-toolbar",
@@ -68,12 +74,15 @@ export {
     IonFooter,
     IonHeader,
     IonIcon,
+    IonImg,
     IonInput,
     IonItem,
     IonLabel,
     IonList,
     IonRow,
     IonSpinner,
+    IonSegment,
+    IonSegmentButton,
     IonTitle,
     IonToolbar,
     ToolbarButton,

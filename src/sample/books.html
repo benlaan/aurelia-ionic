@@ -1,6 +1,6 @@
 <template>
 
-        <ion-header>
+    <ion-header>
         <ion-toolbar color="primary" no-border-bottom>
 
             <button ion-button button-start click.delegate="save(true)">
@@ -8,14 +8,12 @@
             </button>
 
             <toolbar-content>
-                <ion-segment class="segment segment-md segment-md-light">
-                    <ion-segment-button click.delegate="switchTab('TopRated')" class="segment-button ${mode == 'TopRated' ? 'segment-activated' : ''}" tappable>
+                <ion-segment color="light">
+                    <ion-segment-button click.delegate="switchTab('TopRated')" activated.bind="mode == 'TopRated'" tappable>
                         Top Rated
-                        <div class="button-effect"></div>
                     </ion-segment-button>
-                    <ion-segment-button click.delegate="switchTab('All')" class="segment-button ${mode != 'TopRated' ? 'segment-activated' : ''}" tappable>
+                    <ion-segment-button click.delegate="switchTab('All')" activated.bind="mode != 'TopRated'" tappable>
                         All
-                        <div class="button-effect"></div>
                     </ion-segment-button>
                 </ion-segment>
             </toolbar-content>
@@ -40,8 +38,9 @@
                     <ion-label click.delegate="viewBook(book)">
                         <ion-grid class="grid">
                             <ion-row>
-                                <ion-column col-8><h2><b>${book.title}</b></h2></ion-column>
-                                <ion-column col-4><h2>${book.genre}</h2></ion-column>
+                                <ion-column col-3><ion-img src.bind="book.image" style="width:60px; height:80px"></ion-img></ion-column>
+                                <ion-column col-6><h2>${book.title}</h2></ion-column>
+                                <ion-column col-3><h2>${book.genre}</h2></ion-column>
                             </ion-row>
                             <ion-row>
                                 <ion-column col-5>
@@ -74,11 +73,10 @@
                 </ion-item>
             </ion-list>
         </div>
-
     </ion-content>
 
     <ion-footer>
-        <ion-toolbar>
+        <ion-toolbar color="light">
 
             <toolbar-button title="Add" icon="add" click.delegate="add()"></toolbar-button>
             <toolbar-button title="Refresh" icon="refresh" click.delegate="refresh()"></toolbar-button>
