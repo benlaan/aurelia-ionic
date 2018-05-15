@@ -31,12 +31,14 @@ export class BookRepository {
             return;
         }
 
+        var date = (dateValue: string) => moment(dateValue).toDate();
+
         this.books = [
 
-            { id: 1, title: "Ionic Compounds", genre: "Chemistry", author: "Rock Saltier", published: moment("2015/04/03").toDate(), pages: 455, stars: 4, },
-            { id: 2, title: "Aurelia For Beginners", genre: "Software", author: "Sol Golding", published: moment("2002/10/20").toDate(), pages: 1124, stars: 3.5 },
-            { id: 3, title: "Angular with Ionic", genre: "Software", author: "Anonymous", published: moment("2015/01/12").toDate(), pages: 600, stars: 3 },
-            { id: 4, title: "Advanced MVVM", genre: "Software", author: "Archie Techt", published: moment("2011/08/30").toDate(), pages: 275, stars: 2.5 }
+            { id: 1, title: "Ionic Compounds", genre: "Chemistry", author: "Rock Saltier", published: date("2015/04/03"), pages: 455, stars: 4, },
+            { id: 2, title: "Aurelia For Beginners", genre: "Software", author: "Sol Golding", published: date("2002/10/20"), pages: 1124, stars: 3.5 },
+            { id: 3, title: "Angular with Ionic", genre: "Software", author: "Anonymous", published: date("2015/01/12"), pages: 600, stars: 3 },
+            { id: 4, title: "Advanced MVVM", genre: "Software", author: "Archie Techt", published: date("2011/08/30"), pages: 275, stars: 2.5 }
         ];
 
         this.saveToLocalStorage();
@@ -81,7 +83,7 @@ export class BookRepository {
             }
         }
     }
-  
+
     public get(id: number): Book {
 
         return this.books.find(b => b.id == id);

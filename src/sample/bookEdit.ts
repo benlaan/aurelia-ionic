@@ -5,7 +5,7 @@ import { BaseEdit } from './baseEdit';
 import { Book, BookRepository } from './bookRepository';
 
 @autoinject()
-export class SubmissionEdit extends BaseEdit {
+export class BookEdit extends BaseEdit {
 
     private id?: number;
 

@@ -1,6 +1,5 @@
 import { autoinject, bindable } from 'aurelia-framework';
 import { Router } from 'aurelia-router';
-import { Parent } from 'aurelia-dependency-injection';
 
 import { Mode, Book, BookRepository } from './bookRepository';
 import { App } from 'app';
@@ -10,6 +9,7 @@ export class BookList {
 
     @bindable
     private mode: Mode;
+
     public books: Book[];
 
     constructor(private app: App, private router: Router, private repository: BookRepository) {

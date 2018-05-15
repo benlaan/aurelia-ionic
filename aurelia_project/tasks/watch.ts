@@ -25,7 +25,7 @@ if (typeof project.build.copyFiles === 'object') {
   }
 }
 
-let watch = (callback) => {
+let watch = (callback?) => {
   watchCallback = callback || watchCallback;
 
   // watch every glob individually
