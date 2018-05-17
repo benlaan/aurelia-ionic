@@ -8,7 +8,6 @@ import { BaseComponent } from "./baseComponent";
 @inject(Element, Parent.of(IonItem))
 export class IonInput extends BaseComponent {
 
-    @bindable
     private _dateInput: HTMLInputElement;
     private _textInput: HTMLInputElement;
 
@@ -19,7 +18,7 @@ export class IonInput extends BaseComponent {
     public value: any;
 
     @bindable
-    public field: string;
+    public name: string;
 
     @bindable
     public readonly: boolean;

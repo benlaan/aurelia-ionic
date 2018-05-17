@@ -1,7 +1,3 @@
 <template>
-    <img
-        src.bind="loadSrc"
-        alt.bind="alt"
-        decoding="async">
-    </img>
+    <img src.bind="loadSrc" alt="${alt || ''}" decoding="async"></img>
 </template>

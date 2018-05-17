@@ -22,10 +22,6 @@ define(["require", "exports", "tslib", "aurelia-framework", "aurelia-dependency-
         };
         tslib_1.__decorate([
             aurelia_templating_1.bindable,
-            tslib_1.__metadata("design:type", HTMLInputElement)
-        ], IonInput.prototype, "_dateInput", void 0);
-        tslib_1.__decorate([
-            aurelia_templating_1.bindable,
             tslib_1.__metadata("design:type", String)
         ], IonInput.prototype, "type", void 0);
         tslib_1.__decorate([
@@ -35,7 +31,7 @@ define(["require", "exports", "tslib", "aurelia-framework", "aurelia-dependency-
         tslib_1.__decorate([
             aurelia_templating_1.bindable,
             tslib_1.__metadata("design:type", String)
-        ], IonInput.prototype, "field", void 0);
+        ], IonInput.prototype, "name", void 0);
         tslib_1.__decorate([
             aurelia_templating_1.bindable,
             tslib_1.__metadata("design:type", Boolean)
